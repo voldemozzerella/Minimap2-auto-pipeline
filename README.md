@@ -16,7 +16,8 @@ python scripts/run_pipeline.py \
   --reference refs/genome.fa \
   --outdir results \
   --threads 4 \
-  --preset map-ont
+  --preset map-ont \
+  --plot
 ```
 
 ## Outputs
@@ -27,3 +28,5 @@ python scripts/run_pipeline.py \
 - `results/aligned.sorted.bam.bai`
 - `results/aligned.flagstat.txt`
 - `results/aligned.idxstats.txt`
+- `results/aligned.depth.tsv`
+- `results/aligned.coverage.png` (when `--plot` is used)
